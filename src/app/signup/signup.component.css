@@ -1,0 +1,184 @@
+/* Apply flex layout for screens smaller than 768px (adjust as needed) */
+
+
+/* Apply rounded corners to the image */
+
+img {
+    border-radius: 10px;
+    /* Adjust the radius as needed */
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .top-left-image,
+    .top-right-image,
+    .bottom-left-image,
+    .bottom-right-form {
+        flex: 1;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Keep the original positioning for larger screens */
+
+
+/* Adjust the breakpoint (e.g., 768px) as needed */
+
+@media (min-width: 769px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* Adjust as needed */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Style for the top-left image */
+    .top-left-image {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        max-width: 50%;
+        /* Adjust as needed */
+        max-height: 50vh;
+        /* Adjust as needed */
+    }
+    /* Style for the "Create Account" text on the top-right */
+    .top-right-image {
+        position: absolute;
+        top: 70px;
+        right: 400px;
+        max-width: 100%;
+        /* Adjust as needed */
+        max-height: 100%;
+        text-align: right;
+        padding: 20px;
+        /* Adjust as needed */
+    }
+    /* Style for the bottom-left image */
+    .bottom-left-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 500px;
+        /* Adjust as needed */
+        max-height: 510px;
+        /* Adjust as needed */
+    }
+    /* Style for the login form on the bottom-right */
+    .bottom-right-form {
+        position: absolute;
+        bottom: 80px;
+        right: 300px;
+        max-width: 50%;
+        /* Adjust as needed */
+        padding: 20px;
+        /* Adjust as needed */
+    }
+}
+
+form {
+    background: none;
+    /* Remove the background */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+
+/* Style the form labels */
+
+form label {
+    color: #333;
+    /* Dark text color */
+    font-weight: bold;
+    display: block;
+    /* Display labels as blocks for better alignment */
+    margin-bottom: 5px;
+    /* Add vertical spacing between labels and inputs */
+}
+
+
+/* Style the form inputs */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    border: none;
+    /* Remove input borders */
+    border-bottom: 2px solid #333;
+    /* Add a bottom border */
+    padding: 5px;
+    /* Add padding for spacing */
+    margin-bottom: 20px;
+    /* Add vertical spacing between inputs */
+    width: 400px;
+    /* Make inputs full width */
+    background: transparent;
+    /* Remove background color */
+    transition: border-color 0.3s ease;
+    /* Smooth border transition */
+}
+
+
+/* Style the Create Account button */
+
+form button[type="submit"] {
+    background: #333;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Add padding for spacing */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+}
+
+form button[type="submit"]:hover {
+    background: #555;
+    /* Darker background color on hover */
+}
+
+p {
+    text-align: center;
+    /* Center-align the text */
+    margin-top: 20px;
+    /* Add some spacing above the link */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Text color */
+}
+
+p a {
+    color: #FFA500;
+    /* Link color (yellow-orange) */
+    text-decoration: none;
+    /* Remove underlines from the link */
+    font-weight: bold;
+    /* Make the link text bold */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+p a:hover {
+    color: #FF8C00;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}

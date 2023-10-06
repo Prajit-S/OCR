@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="top-left-image" src="assets/image1.jpg" alt="Image 1">
+        <img class="top-right-image" src="assets/image3.jpg" alt="Image 3">
+        <img class="bottom-left-image" src="assets/image2.jpg" alt="Image 2">
+        <div class="bottom-right-form">
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+            <p>Don't have an account? <a [routerLink]="['/signup']">Sign up</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>

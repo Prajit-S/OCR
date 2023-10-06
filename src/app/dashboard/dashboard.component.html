@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Our Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="orange-background">
+                <img src="assets/man1.png" alt="Image" class="dashboard-image">
+                <div class="header">
+                    <h1 id="title">Welcome</h1>
+                    <div class="text-container">
+                        <p>Choose any of our services that are listed</p>
+                    </div>
+                </div>
+            </div>
+            <table class="dashboard-table">
+                <tr>
+                    <!-- Make the table contents clickable with router links -->
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Cheques</a></td>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Receipts</a></td>
+                </tr>
+                <tr>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Driving License</a></td>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Resume</a></td>
+                </tr>
+                <tr>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Passport</a></td>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Bank Statement</a></td>
+                </tr>
+                <tr>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Purchase Orders</a></td>
+                    <td class="dashboard-box"><a [routerLink]="['/drag-and-drop']">Invoice</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

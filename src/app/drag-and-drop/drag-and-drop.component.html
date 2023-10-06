@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drag and Drop</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Drag and Drop File</h1>
+
+        <div class="drop-zone">
+            <div class="translucent-box" id="trigger-drag-and-drop" (click)="selectFile()">
+                <p class="plus-sign">+</p>
+                <p class="instruction">Drag and Drop Your File Here</p>
+                <div class="file-info" *ngIf="selectedFileName">{{ selectedFileName }} ({{ selectedFileSize }})</div>
+            </div>
+            <input type="file" id="file-input" accept=".pdf" (change)="onFileSelected($event)" style="display: none;">
+
+            <button id="convert-button">Convert</button>
+        </div>
+    </div>
+</body>
+
+</html>

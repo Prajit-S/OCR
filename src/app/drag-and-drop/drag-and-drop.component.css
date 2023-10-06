@@ -1,0 +1,134 @@
+/* General styles */
+
+body {
+    background-image: url('../../assets/blue.jpg');
+    /* Set the background image of the entire page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    /* Choose a suitable font-family */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Make the body fill the viewport height */
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+
+/* Title styles */
+
+.title {
+    font-size: 48px;
+    /* Increase the font size for the title */
+    font-weight: bold;
+    color: #333;
+    /* Set title text color */
+    margin: 0;
+    padding-top: 10 px;
+    /* Adjust the top padding to move it higher up */
+    margin-bottom: 100px;
+    /* Add spacing between the title and the box */
+}
+
+
+/* Drop zone styles */
+
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #999;
+    /* Set border for the drop zone */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Set background opacity */
+}
+
+
+/* Translucent box styles */
+
+.translucent-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    /* Increase the width as needed */
+    height: 300px;
+    /* Increase the height as needed */
+    border: 2px dashed #666;
+    /* Set border for the translucent box */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Set background opacity */
+    margin-bottom: 20px;
+    position: relative;
+    /* Add relative positioning for text centering */
+}
+
+.file-info {
+    font-size: 14px;
+    /* Set the font size for the file info */
+    text-align: center;
+    /* Center the text */
+    margin-top: 5px;
+    /* Add margin-top to separate it from the text above */
+}
+
+
+/* Plus sign styles */
+
+.plus-sign {
+    font-size: 200px;
+    /* Increase the font size to make it bigger */
+    font-weight: bold;
+    color: #666;
+    /* Set plus sign color */
+    margin: 0;
+    cursor: pointer;
+    /* Add cursor pointer to indicate it's clickable */
+    transition: color 0.3s;
+}
+
+
+/* Add a hover effect to the plus sign */
+
+.plus-sign:hover {
+    color: #333;
+    /* Change color on hover */
+}
+
+
+/* Instruction text styles */
+
+.instruction {
+    font-size: 16px;
+    color: #666;
+    /* Set instruction text color */
+    margin: 0;
+}
+
+
+/* Button styles */
+
+#convert-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f59e07;
+    /* Set button background color */
+    color: #fff;
+    /* Set button text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add transition for hover effect */
+}
+
+#convert-button:hover {
+    background-color: #333;
+    /* Change button background color on hover */
+}
