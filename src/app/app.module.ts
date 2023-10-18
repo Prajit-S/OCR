@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
+import { SidebarService } from './sidebar.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

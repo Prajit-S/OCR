@@ -1,1 +1,13 @@
-<p>sidebar works!</p>
+<div class="sidebar" [ngClass]="{'visible': sidebarService.isSidebarVisible}">
+    <div class="profile">
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><i class="fa-solid fa-globe"></i> LinkedIn</li>
+            <li><i class="fa-brands fa-linkedin"></i> Website</li>
+            <li><i class="fa fa-envelope"></i> Contact Us</li>
+        </ul>
+    </div>
+    <button (click)="logout()">Logout</button>
+</div>
